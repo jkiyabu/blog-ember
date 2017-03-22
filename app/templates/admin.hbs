@@ -1,0 +1,8 @@
+<ul>
+  {{#each model as |blog|}}
+     {{admin-tile blog=blog destroyBlog="destroyBlog"}}
+     {{update-blog blog=blog update="update"}}
+  {{/each}}
+</ul>
+
+{{add-blog saveBlog="saveBlog"}}
